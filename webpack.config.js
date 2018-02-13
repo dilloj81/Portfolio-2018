@@ -1,17 +1,23 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     entry: './www/src/js/app.js',
     output: {
-        path: path.resolve(__dirname, 'www/dist/js'),
+        path: path.resolve(__dirname, './www/dist/js'),
         filename: 'bundle.js',
     
-    },            
-    devServer: {
-        contentBase: path.join(__dirname, "www"),
-        compress: true,
     },
+    plugins: [
+        new BrowserSyncPlugin({
+        // browse to http://localhost:3000/ during development,
+        // ./public directory is being served
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: ['www'] }
+        })
+    ],    
     module: {
         rules: [{
             test: /\.scss$/,
