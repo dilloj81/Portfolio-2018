@@ -2356,6 +2356,10 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
+normalize.css@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
+
 npm-run-path@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-2.0.2.tgz#35a9232dfa35d7067b4cb2ddf2357b1871536c5f"
@@ -3236,6 +3240,10 @@ schema-utils@^0.4.3:
   dependencies:
     ajv "^5.0.0"
     ajv-keywords "^2.1.0"
+
+scss-flex-grid@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/scss-flex-grid/-/scss-flex-grid-0.3.5.tgz#f8342da50bac65e45867c9012e914eb880d9b9a1"
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
