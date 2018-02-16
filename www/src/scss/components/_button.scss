@@ -1,0 +1,42 @@
+.btn {
+	background: $brand-primary;
+	color: $white;
+	display: inline-block;
+	padding: 15px 50px;
+	text-transform: uppercase;
+	transition: $transition;
+	will-change: transform;
+
+
+	&--white {
+		background: $white;
+		color: $brand-primary;
+	}
+
+	&--show {
+		background: $black;
+		border: 2px solid $brand-primary;
+		position: relative;
+		z-index: 1;
+
+		&:hover {
+			background: $brand-primary;
+
+			img {
+				transform: translateX(25px) scale(2);
+				opacity: 1;
+			}
+		}
+
+		img {
+			width: 30px;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			transition: $transition;
+			will-change: transform;
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+}

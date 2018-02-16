@@ -5,28 +5,39 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/dist/css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+        <title>Jamie Dillon - Web Developer Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     </head>
     <body>
-
         <div class="banner flex">
+            <div class="banner__slash"></div>
             <div class="container flex">
-                <div class="banner__content">
-                    <h1 class="banner__title">Hi! My name is Jamie.</h1>
-                    <h2 class="banner__subtitle">Amongst other things, I'm a <strong>Web Developer</strong>.</h2>
+                <div class="col-md-6">
+                    <div class="banner__content">
+                        <h1 class="banner__title">Hi,  my name is Jamie.</h1>
+                        <h2 class="banner__subtitle">I'm a <span class="highlight">Web Developer</span> with <span class="highlight">4 years experience</span> in agency land.</h2>
+                        <a href="#portfolio" class="btn btn--show">Show me what you got... <img src="/dist/img/got.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner__image"></div>
                 </div>
             </div>
         </div>
-        <nav class="nav">
-            <ul class="nav__li">
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="introduction">
-            <p class="introduction__copy">
+        <section class="about" id="about">
+            <div class="container">
+                <p class="about__intro">I've worked on many fantastic projects, primarily using Wordpress.</p>
+            </div>
         </section>
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__list__item">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <script src="/dist/js/bundle.js"></script>
     </body>
 </html>

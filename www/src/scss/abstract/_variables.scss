@@ -10,12 +10,16 @@ $gray-lighter: #ccc;
 $gray-lightest: #eee;
 $gray-border: #f1f1f1; 
 
+$brand-primary: #607d8b; //#fff700;
 
-$brand-primary: #f0f;
+$transition: 0.3s all;
 
 /* FONTS */
 
-$font: 'Amatic SC', cursive;
+$font: 'Libre Baskerville', serif;
 
 /* GRID SIZING */
 $container-max: 1300px;
+$gutter: 30px;
+$gutter-small: $gutter / 2;
+$gutter-large: $gutter * 2;

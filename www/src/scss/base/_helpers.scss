@@ -1,3 +1,31 @@
 .flex {
 	display: flex;
 }
+
+.highlight {
+	background: $brand-primary;
+	display: inline-block;
+	padding: 5px 10px;
+	white-space: nowrap;
+	color: $black;
+
+	&::selection {
+		color: $brand-primary;
+		background: $black;
+	}
+}
+
+.underline {
+	position: relative;
+
+	&:after {
+		content: '';
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		z-index: -1;
+		background: $brand-primary;		
+	}
+}

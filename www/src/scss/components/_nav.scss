@@ -1,0 +1,13 @@
+.nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	background: $white;
+	color: $white;
+	padding: $gutter;
+
+	&__list {
+		margin: 0;
+		padding: 0;
+	}
+}

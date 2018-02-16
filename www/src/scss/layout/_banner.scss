@@ -1,37 +1,10 @@
 .banner {
-	height: 70vh;
-	background: $gray-darkest;
-	background-image: url(/dist/img/20170702_134958.jpg);
+	height: 80vh;
 	color: $white;
-	background-size: cover;
-	background-position: center;
-	text-align: center;
 	position: relative;
-
-	&:before {
-		content: '';
-		background: $black;
-		opacity: 0.8;
-		z-index: 0;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-	}
-
-	&:after {
-		content: '';
-		background: $white;
-		bottom: 0;
-		left: 50%;
-		display: block;
-		position: absolute;
-		width: 30px;
-		height: 30px;
-		transform: translate(-50%, 50%) rotate(45deg);
-		z-index: 3;
-	}
+	line-height: 1.6;
+	background: $black;
+	text-align: center;
 
 	> .container {
 		align-self: center;
@@ -39,13 +12,58 @@
 		z-index: 1;
 	}
 
+	&__slash {
+		background: $brand-primary;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 20vh;
+		clip-path: polygon(0 1%, 0% 100%, 100% 100%);
+		z-index: 3;
+	}
+
+	&__content {
+		width: 100%;
+	}
+
 	&__title {
-		font-size: 5em;
+		font-size: 3.5em;
 		margin-bottom: 0;
 	}
 
 	&__subtitle {
-		font-size: 2.5em;
-		margin-top: 10px;
+		font-size: 1.5em;
+		margin-top: 15px;
+		margin-bottom: $gutter-large;
+		position: relative;		
+	}
+
+	$border-size: 6px;
+	$image-size: 500px;
+	$clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+
+	&__image {
+		clip-path: $clip-path;
+		position: relative;
+		width: $image-size;
+		height: $image-size;
+		display: block;
+		background: $brand-primary;
+		align-self: flex-end;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			clip-path: $clip-path;
+			top: $border-size / 2;
+			left: $border-size / 2;
+			height: $image-size - $border-size; 
+			width: $image-size - $border-size;	
+			background: $black url(/dist/img/20170702_134958.jpg) no-repeat;
+			background-size: cover;
+			background-position: center;
+		}		
 	}
 }
